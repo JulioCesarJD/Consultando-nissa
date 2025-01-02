@@ -10,6 +10,7 @@
     }
   }
   
+/* Estilos para el modo oscuro */
 
 
 * {
@@ -19,9 +20,24 @@
     font-family: 'Poppins';
 }
 
-body {
+/* body {
     background: #F5F5F5;
-}
+} */
+
+/* Style rules for dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: white;
+      color: white;
+    }
+  }
+  /* Style rules for light mode */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
 
 header {
     height: 100px;

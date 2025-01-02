@@ -29,3 +29,4 @@ document.querySelectorAll(".menu ul li a").forEach(link => {
         document.querySelector(".menu").classList.remove("mostrar_menu");
     });
 });
+
