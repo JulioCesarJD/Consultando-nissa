@@ -30,3 +30,11 @@ document.querySelectorAll(".menu ul li a").forEach(link => {
     });
 });
 
+// Eliminar cualquier preferencia del esquema oscuro
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    if (e.matches) {
+      // Si el sistema está en modo oscuro, forzar modo claro
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  });
+  

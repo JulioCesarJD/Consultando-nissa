@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-
-/* Descativar el modo oscuro */
-
-@media (prefers-color-scheme: dark) {
+/* Style rules for dark mode */
+/* @media (prefers-color-scheme: dark) {
     body {
-      background-color: #333;
-      color: #fff;
+      background: black;
+      color: white;
     }
-  }
-  
-/* Estilos para el modo oscuro */
+  } */
+  /* Style rules for light mode */
+  /* @media (prefers-color-scheme: light) {
+    body {
+      background-color: #F5F5F5;
+      color: black;
+    }
+  } */
 
 
 * {
@@ -20,23 +23,10 @@
     font-family: 'Poppins';
 }
 
-/* body {
-    background: #F5F5F5;
-} */
-
-/* Style rules for dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-      background-color: white;
-      color: white;
-    }
-  }
-  /* Style rules for light mode */
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: white;
-      color: black;
-    }
+/* Estilos para el modo claro */
+[data-theme="light"] {
+    background-color: white;
+    color: black;
   }
 
 header {
