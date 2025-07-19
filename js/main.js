@@ -25,8 +25,19 @@ document.addEventListener("scroll", function() {
 });
 
 document.querySelectorAll(".menu ul li a").forEach(link => {
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
         document.querySelector(".menu").classList.remove("mostrar_menu");
+        
+        const targetId = this.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
     });
 });
 
